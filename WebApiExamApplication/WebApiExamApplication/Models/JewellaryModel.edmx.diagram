@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="09c5b71a5ef7408d8d45722e2345351d" Name="Diagram1">
+        <EntityTypeShape EntityType="JewelleryDBModel.Bill" Width="1.5" PointX="5.25" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="JewelleryDBModel.BillDetail" Width="1.5" PointX="7.5" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="JewelleryDBModel.Cart" Width="1.5" PointX="8.25" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="JewelleryDBModel.Category" Width="1.5" PointX="3" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="JewelleryDBModel.CustomerMaster" Width="1.5" PointX="5.25" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="JewelleryDBModel.ProductMaster" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="JewelleryDBModel.UserDetail" Width="1.5" PointX="3" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="JewelleryDBModel.UserType" Width="1.5" PointX="0.75" PointY="6.875" IsExpanded="true" />
+        <AssociationConnector Association="JewelleryDBModel.FK__Bill__UserID__38996AB5" ManuallyRouted="false" />
+        <AssociationConnector Association="JewelleryDBModel.FK__BillDetai__BillI__3B75D760" ManuallyRouted="false" />
+        <AssociationConnector Association="JewelleryDBModel.FK__BillDetai__Produ__3C69FB99" ManuallyRouted="false" />
+        <AssociationConnector Association="JewelleryDBModel.FK__Cart__ProductId__33D4B598" ManuallyRouted="false" />
+        <AssociationConnector Association="JewelleryDBModel.FK__Cart__UserID__32E0915F" ManuallyRouted="false" />
+        <AssociationConnector Association="JewelleryDBModel.FK__ProductMa__Categ__300424B4" ManuallyRouted="false" />
+        <AssociationConnector Association="JewelleryDBModel.FK__CustomerM__UserI__4222D4EF" ManuallyRouted="false" />
+        <AssociationConnector Association="JewelleryDBModel.FK__UserDetai__TypeI__286302EC" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

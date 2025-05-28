@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Added Products</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="JewelleryWeb.css">
+    <link rel="stylesheet" href="cart.css">
+    <script src="./JQuery.js"></script>
+</head>
+
+<body>
+    <header id="navbar-main">
+        <div class="navbar">
+            <div class="nav-belt">
+                <div class="contact-div">
+                    <img src="ImagesJewellery/jewellImage.jpg" class="logo" />
+                    <i class="fa-regular fa-paper-plane i-font"></i>
+                    <div class="horizontal"></div>
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <!-- Hamburger Menu -->
+                <div class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="list-item">
+                    <div class="list-div nav-menu" id ="navMenu">
+                        <ul>
+                            <li class="dropdown list-anchor">
+                                CATEGORY
+                                <div class="dropdown-content" id="jewell-category">
+                                     <ul id="dropdown-content">
+
+                                     </ul>
+                                </div>
+                            </li>
+                            <li><a href="JewelleryWeb.html" class="list-anchor">HOME</a></li>
+                            <li><a href="JewelleryWeb.html" class="list-anchor">PAGE</a></li>
+                            <li><a href="https://www.kalkifashion.com/blogs/category/indian-saree/"
+                                    class="list-anchor">BLOG</a></li>
+                            <li><a href="JewelleryWeb.html" class="list-anchor">CONTACT US</a> </li>
+                             <li>
+                                <div id="userId" style="color: aliceblue;"></div>
+                            </li>
+
+                            <li>
+                                <div id="signout" >
+                                    <span style="color:aquamarine; cursor: pointer;" id="logOutJewell">LOG OUT<i class="fa-solid fa-power-off"></i></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--div cart and counting-->
+                <div class="div-cart">
+                    <a
+                        href="https://www.bing.com/maps?q=Jwellert+sop+map&FORM=HDRSC6&cp=19.052203%7E73.008371&lvl=13.6">
+                        <i class="fa-solid fa-location-dot  i-font"></i></a>
+                        <a href="cart.html" style="position: relative;">
+                        <i class="fa-solid fa-cart-shopping i-font"></i>
+                        <span id="cartCount" class="cart-count">0</span>
+                    </a>
+
+                    <div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <div>
+        <div class="carthead">
+            <div class="carthead-inner">
+                <h3>Your Cart</h3>
+            <i class="fa-solid fa-xmark"  id="closeDivcart"></i>
+            </div>
+        </div>
+        <!--store the added product-->
+        <div id="cartItems">
+            
+        </div>
+    </div>
+     <script src="cart.js" ></script>
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="JewelleryWeb.css"> <!--This style for Navigation-->
+    <link rel="stylesheet" href="CardDiv.css"> <!--This style give css to the Div Cards-->
+     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./JQuery.js"></script>
+    <title>Jewellery</title>
+</head>
+
+
+<body>
+    <!--This is the header which contains the navigation link list -->
+    <header id="navbar-main">
+        <div class="navbar">
+            <div class="nav-belt">
+                <div class="contact-div">
+                    <img src="./ImagesJewellery/jewellImage.jpg" class="logo" />
+                    <i class="fa-regular fa-paper-plane i-font"></i>
+                    <div class="horizontal"></div>
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <!-- Hamburger Menu -->
+                <div class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="list-item">
+                    <div class="list-div nav-menu" id ="navMenu">
+                        <ul><!--Drop down list for category-->
+                            <li class="dropdown list-anchor">
+                                CATEGORY
+                                <div class="dropdown-content" id="jewell-category">
+                                     <ul id="dropdown-content">
+                                        <!--list of categories-->
+                                     </ul>
+                                </div>
+                            </li>
+                            <li><a href="JewelleryWeb.html" class="list-anchor">HOME</a></li>
+                            <li><a href="JewelleryWeb.html" class="list-anchor">PAGE</a></li>
+                            <li><a href="https://www.vummidi.com/blog/indian-traditional-jewellery-from-head-to-toe/"
+                                    class="list-anchor">BLOG</a></li>
+                            <li><a href="JewelleryWeb.html" class="list-anchor">CONTACT US</a> </li>
+                            <!-- <li><a href="Login.html" class="list-anchor">LOGIN</a></li> -->
+                            <li>
+                                <div id="signin">
+                                    <span style="color:aquamarine;" >LOGIN</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="userId" style="color: aliceblue;"></div>
+                            </li>
+                            <li>
+                                <div id="myOrder" style="color: aliceblue;"></div>
+                            </li>
+                            <li>
+                                <div id="signout" style="display: none;">
+                                    <span style="color:aquamarine; cursor: pointer;"  id="logOutJewell">LOG OUT<i class="fa-solid fa-power-off"></i></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--div cart and counting-->
+                <div class="div-cart">
+                    <a
+                        href="https://www.bing.com/maps?q=raymond+saree+shop&FORM=HDRSC6&cp=19.176404%7E72.947721&lvl=15.6">
+                        <i class="fa-solid fa-location-dot  i-font"></i></a>
+                        <a href="cart.html" style="position: relative;">
+                        <i class="fa-solid fa-cart-shopping i-font"></i>   
+                        <span id="cartCount" class="cart-count">0</span>
+                    </a>
+                    <div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <main style="background-color:rgba(158, 154, 154, 0.493)">
+        <div class="div-vedio">
+            <i class="fa-solid fa-angle-down i-font"></i>
+            <!-- <video src="./FashionVedio.mp4" preload="auto" width="100%" autoplay loop> </video> -->
+             <div id="bigSlide"></div>
+            <a href="#MainContainer">SHOPW NOW</a>
+        </div>s
+        <div class="main">
+            <!--storing the carts-->
+            <div class="container" id="MainContainer">
+
+            </div>
+        </div>
+        <div class="main-div">
+            <div class="black-div">
+                <a href="Login.html">SING IN</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="foot-div">
+            <a href="#">
+                <div class="top">
+                    <span>Back to Top</span>
+                </div>
+            </a>
+            <div class="container-part">
+                <div class="parts">
+                    <div class="foot-head">
+                        <h4>Get to Know Us</h4>
+                    </div>
+                    <ul class="ul-style">
+                        <li><a href="">About Jeweely</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Press Releases</a></li>
+                        <li><a href="">Choose Your Style with Jewellery</a></li>
+                    </ul>
+                </div>
+                <div class="parts">
+                    <div class="foot-head">
+                        <h4>Connect with Us</h4>
+                    </div>
+                    <ul class="ul-style">
+                        <li><a href="">Facebook</a></li>
+                        <li><a href="">Twitter</a></li>
+                        <li><a href="">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="parts">
+                    <div class="foot-head">
+                        <h4>Make Money with Us</h4>
+                    </div>
+                    <ul class="ul-style">
+                        <li><a href="">Become an Affiliate</a></li>
+                        <li><a href="">Advertise Your jewellery</a></li>
+                        <li><a href="">Protect and Build Your Dream</a></li>
+                        <li><a href="">Supply to Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact-div">
+                <div class="contact-holder">
+                    <i class="fa-regular fa-envelope"></i>
+                    <i class="fa-brands fa-square-twitter"></i>
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-square-youtube"></i>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <script src="JewelleryWeb.js" defer></script> <!--Js file to perform action on html elements-->
+    
+    
+</body>
+
+</html>

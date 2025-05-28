@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Product</title>
+    <!-- Bootstrap CSS from CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="main-div">
+         <div class="row mt-4" id="addProductForm" >
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header">
+                            Add New Product
+                        </div>
+                        <div class="card-body">
+                            <form id="productForm" enctype="multipart/form-data">
+                                <div class="mb-3">
+                                    <label for="productName" class="form-label">Product Name</label>
+                                    <input type="text" class="form-control" id="productName" disabled>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="price" class="form-label">Price</label>
+                                    <input type="number" class="form-control" id="price" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="productImage" class="form-label">Image</label>
+                                    <input type="file" class="form-control" id="productImage" accept="image/*" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="description" class="form-label">Description</label>
+                                    <textarea class="form-control" id="description" rows="3"></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="quantity" class="form-label">Quantity</label>
+                                    <input type="number" class="form-control" id="quantity" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="category" class="form-label">Category</label>
+                                    <select class="form-control" id="category">
+                                        <option value="Select Category" disabled>Select Category</option>
+                                        <!-- Options will be populated dynamically -->
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-primary " id="btnUpdateProduct">Update
+                                    Product</button>
+                                    <button type="button" class="btn btn-dark " id="btnBack">Back
+                                    </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <script src="UpdateProduct.js"></script>
+</body>
+</html>

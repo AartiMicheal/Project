@@ -14,7 +14,7 @@ namespace WebApiExamApplication.ApiControllers
     [EnableCors(origins: "*", headers: "*", methods: "*", exposedHeaders: "SampleHeader")]
     public class ProductController : ApiController
     {
-        //creating db-Databse context  
+        //creating objectof  db-Databse context  
         JewelleryDBEntities dbContext = new JewelleryDBEntities();
         
         //http method to get all Product 

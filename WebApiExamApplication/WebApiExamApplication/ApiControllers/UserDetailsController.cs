@@ -79,8 +79,8 @@ namespace WebApiExamApplication.ApiControllers
                 }
                 else
                 {
-                    //else user found 404
-                    return NotFound();
+                    //else user found 409
+                    return Conflict();
                 }
             }catch(Exception ex)
             {
